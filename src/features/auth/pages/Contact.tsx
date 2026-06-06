@@ -31,7 +31,7 @@ const contactCards = [
   {
     icon: Phone,
     label: "WhatsApp",
-    value: "+234 800 REHBOX",
+    value: "+234 816 142 7091",
     sub: "For urgent clinical questions",
     gradient: "var(--pub-grad-magenta)",
   },
