@@ -39,7 +39,7 @@ const PublicFooter = () => (
         ))}
       </div>
       <div className="border-t pt-8 flex flex-col md:flex-row items-center justify-between gap-4" style={{ borderColor: "rgba(255,255,255,0.08)" }}>
-        <p className="text-sm" style={{ color: "rgba(255,255,255,0.35)" }}>© 2026 REHBOX LTD Ltd. · Built for Nigeria 🇳🇬</p>
+        <p className="text-sm" style={{ color: "rgba(255,255,255,0.35)" }}>© 2026 REHBOX LTD · Built for Nigeria 🇳🇬</p>
         <p className="text-xs" style={{ color: "rgba(255,255,255,0.2)" }}>NDPA 2023 Compliant · Secured by SSL</p>
       </div>
     </div>

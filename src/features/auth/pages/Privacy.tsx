@@ -125,7 +125,7 @@ const sections: LegalSection[] = [
       },
       {
         sub: "How to exercise your rights",
-        text: "Email privacy@rehbox.co or write to REHBOX LTD Ltd., Lagos, Nigeria. We will acknowledge your request within 5 business days.",
+        text: "Email privacy@rehbox.co or write to REHBOX LTD, Lagos, Nigeria. We will acknowledge your request within 5 business days.",
       },
     ],
   },
@@ -212,7 +212,7 @@ const sections: LegalSection[] = [
       },
       {
         sub: "Postal address",
-        text: "REHBOX LTD Ltd., Lagos, Nigeria.",
+        text: "REHBOX LTD, Lagos, Nigeria.",
       },
       {
         sub: "Right to complain",
@@ -239,7 +239,7 @@ const Privacy = () => (
       }}
     >
       <p className="text-white/80 text-sm leading-relaxed mb-3">
-        <strong className="text-white">Who we are:</strong> REHBOX LTD. ("ReHboX", "we", "us") operates the ReHboX digital physiotherapy platform at rehbox.co. We are a data controller registered in Nigeria and subject to the Nigeria Data Protection Act 2023.
+        <strong className="text-white">Who we are:</strong> REHBOX LTD ("ReHboX", "we", "us") operates the ReHboX digital physiotherapy platform at rehbox.co. We are a data controller registered in Nigeria and subject to the Nigeria Data Protection Act 2023.
       </p>
       <p className="text-white/80 text-sm leading-relaxed mb-3">
         <strong className="text-white">What this policy covers:</strong> This policy applies to all users of the ReHboX platform — physiotherapists (PTs), clients (patients), and visitors to our website. It covers all personal and health data processed through our web application, APIs, and related services.

@@ -128,7 +128,7 @@ const sections: LegalSection[] = [
     content: [
       {
         sub: "ReHboX content",
-        text: "The ReHboX platform, exercise library, videos, brand assets, and underlying software are the intellectual property of REHBOX LTD Ltd. and are protected by Nigerian and international copyright law.",
+        text: "The ReHboX platform, exercise library, videos, brand assets, and underlying software are the intellectual property of REHBOX LTD and are protected by Nigerian and international copyright law.",
       },
       {
         sub: "Your content",
@@ -212,7 +212,7 @@ const sections: LegalSection[] = [
     content: [
       { sub: "General enquiries", text: "hello@rehbox.co" },
       { sub: "Legal", text: "legal@rehbox.co" },
-      { sub: "Address", text: "REHBOX LTD Ltd., Lagos, Nigeria." },
+      { sub: "Address", text: "REHBOX LTD, Lagos, Nigeria." },
     ],
   },
 ];
