@@ -162,7 +162,7 @@ const PaymentGate = () => {
 
         {activePlan?.isEnterprise ? (
           <a
-            href="mailto:hello@rehbox.health?subject=Enterprise%20Enquiry"
+            href="mailto:hello@rehbox.co?subject=Enterprise%20Enquiry"
             className="block w-full text-center font-bold py-3 rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all"
           >
             Contact Sales

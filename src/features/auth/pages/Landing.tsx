@@ -282,7 +282,7 @@ const Landing = () => {
                   </ul>
                   {plan.isEnterprise
                     ? <a
-                        href="mailto:hello@rehbox.health?subject=Enterprise%20Enquiry"
+                        href="mailto:hello@rehbox.co?subject=Enterprise%20Enquiry"
                         className="flex items-center justify-center w-full font-bold py-3.5 rounded-xl hover:opacity-90 transition-opacity"
                         style={{ border: "2px solid var(--pub-blue-ink)", color: "var(--pub-blue-ink)" }}
                       >

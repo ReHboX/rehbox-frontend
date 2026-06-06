@@ -9,7 +9,7 @@ const sections: LegalSection[] = [
     content: [
       {
         sub: "Agreement",
-        text: "By accessing or using the ReHboX platform at rehbox.health (the “Service”), you agree to be bound by these Terms of Service. If you do not agree, you must not use the Service.",
+        text: "By accessing or using the ReHboX platform at rehbox.co (the “Service”), you agree to be bound by these Terms of Service. If you do not agree, you must not use the Service.",
       },
       {
         sub: "Capacity",
@@ -55,7 +55,7 @@ const sections: LegalSection[] = [
       },
       {
         sub: "Account security",
-        text: "You are responsible for maintaining the confidentiality of your login credentials. Do not share account access with others. Report suspected unauthorised access to security@rehbox.health immediately.",
+        text: "You are responsible for maintaining the confidentiality of your login credentials. Do not share account access with others. Report suspected unauthorised access to security@rehbox.co immediately.",
       },
       {
         sub: "Accurate information",
@@ -78,7 +78,7 @@ const sections: LegalSection[] = [
       },
       {
         sub: "Standard subscription",
-        text: "The Standard plan provides full access to personalised exercise plans, all video content, progress analytics, and real-time messaging with your physiotherapist. Pricing is published at rehbox.health and may change with 30 days' notice.",
+        text: "The Standard plan provides full access to personalised exercise plans, all video content, progress analytics, and real-time messaging with your physiotherapist. Pricing is published at rehbox.co and may change with 30 days' notice.",
       },
       {
         sub: "PT subscriptions",
@@ -90,7 +90,7 @@ const sections: LegalSection[] = [
       },
       {
         sub: "Refunds",
-        text: "Annual subscriptions are eligible for a pro-rated refund within the first 14 days of a new subscription period. Monthly subscriptions are non-refundable once a billing period has started. Contact support@rehbox.health for billing disputes.",
+        text: "Annual subscriptions are eligible for a pro-rated refund within the first 14 days of a new subscription period. Monthly subscriptions are non-refundable once a billing period has started. Contact support@rehbox.co for billing disputes.",
       },
       {
         sub: "Payment processing",
@@ -128,7 +128,7 @@ const sections: LegalSection[] = [
     content: [
       {
         sub: "ReHboX content",
-        text: "The ReHboX platform, exercise library, videos, brand assets, and underlying software are the intellectual property of ReHboX Health Technologies Ltd. and are protected by Nigerian and international copyright law.",
+        text: "The ReHboX platform, exercise library, videos, brand assets, and underlying software are the intellectual property of REHBOX LTD Ltd. and are protected by Nigerian and international copyright law.",
       },
       {
         sub: "Your content",
@@ -174,7 +174,7 @@ const sections: LegalSection[] = [
     content: [
       {
         sub: "Your right to terminate",
-        text: "You may delete your account at any time through account settings or by contacting support@rehbox.health. Termination does not entitle you to a refund for the current billing period.",
+        text: "You may delete your account at any time through account settings or by contacting support@rehbox.co. Termination does not entitle you to a refund for the current billing period.",
       },
       {
         sub: "Our right to terminate",
@@ -197,7 +197,7 @@ const sections: LegalSection[] = [
       },
       {
         sub: "Dispute resolution",
-        text: "We encourage you to contact us first at legal@rehbox.health to resolve disputes informally. If unresolved within 30 days, disputes shall be referred to arbitration under the Arbitration and Conciliation Act (Nigeria), with the seat of arbitration in Lagos.",
+        text: "We encourage you to contact us first at legal@rehbox.co to resolve disputes informally. If unresolved within 30 days, disputes shall be referred to arbitration under the Arbitration and Conciliation Act (Nigeria), with the seat of arbitration in Lagos.",
       },
       {
         sub: "Class action waiver",
@@ -210,9 +210,9 @@ const sections: LegalSection[] = [
     icon: FileText,
     title: "10. Contact Us",
     content: [
-      { sub: "General enquiries", text: "hello@rehbox.health" },
-      { sub: "Legal", text: "legal@rehbox.health" },
-      { sub: "Address", text: "ReHboX Health Technologies Ltd., Lagos, Nigeria." },
+      { sub: "General enquiries", text: "hello@rehbox.co" },
+      { sub: "Legal", text: "legal@rehbox.co" },
+      { sub: "Address", text: "REHBOX LTD Ltd., Lagos, Nigeria." },
     ],
   },
 ];

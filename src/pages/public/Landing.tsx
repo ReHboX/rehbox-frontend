@@ -892,7 +892,7 @@ const Landing = () => {
           </div>
         </div>
         <div className="border-t border-white/[0.05] pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-white/25 text-xs">© 2026 ReHboX Health Technologies. All rights reserved.</p>
+          <p className="text-white/25 text-xs">© 2026 REHBOX LTD. All rights reserved.</p>
           <p className="text-white/18 text-xs">Built with care for Nigeria</p>
         </div>
       </footer>

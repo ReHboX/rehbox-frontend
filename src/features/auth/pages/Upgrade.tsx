@@ -29,7 +29,7 @@ const FREE_FEATURES = [
 const faqs = [
   { q: 'Can I cancel anytime?', a: 'Yes. Cancel from Profile → Subscription. Access continues until the end of the paid period.' },
   { q: 'Is payment secure?', a: 'All payments are processed by Paystack. We never see or store your card details.' },
-  { q: "What if I'm not satisfied?", a: 'Email support@rehbox.health within 7 days of payment for a full refund — no questions asked.' },
+  { q: "What if I'm not satisfied?", a: 'Email support@rehbox.co within 7 days of payment for a full refund — no questions asked.' },
 ];
 
 export default function Upgrade() {

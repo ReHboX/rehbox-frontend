@@ -125,7 +125,7 @@ const sections: LegalSection[] = [
       },
       {
         sub: "How to exercise your rights",
-        text: "Email privacy@rehbox.health or write to ReHboX Health Technologies Ltd., Lagos, Nigeria. We will acknowledge your request within 5 business days.",
+        text: "Email privacy@rehbox.co or write to REHBOX LTD Ltd., Lagos, Nigeria. We will acknowledge your request within 5 business days.",
       },
     ],
   },
@@ -197,7 +197,7 @@ const sections: LegalSection[] = [
       },
       {
         sub: "Current version",
-        text: "The current version of this policy is always available at rehbox.health/privacy. Historical versions are available on request.",
+        text: "The current version of this policy is always available at rehbox.co/privacy. Historical versions are available on request.",
       },
     ],
   },
@@ -208,11 +208,11 @@ const sections: LegalSection[] = [
     content: [
       {
         sub: "Email",
-        text: "privacy@rehbox.health — we acknowledge privacy requests within 5 business days.",
+        text: "privacy@rehbox.co — we acknowledge privacy requests within 5 business days.",
       },
       {
         sub: "Postal address",
-        text: "ReHboX Health Technologies Ltd., Lagos, Nigeria.",
+        text: "REHBOX LTD Ltd., Lagos, Nigeria.",
       },
       {
         sub: "Right to complain",
@@ -239,13 +239,13 @@ const Privacy = () => (
       }}
     >
       <p className="text-white/80 text-sm leading-relaxed mb-3">
-        <strong className="text-white">Who we are:</strong> ReHboX Health Technologies Ltd. ("ReHboX", "we", "us") operates the ReHboX digital physiotherapy platform at rehbox.health. We are a data controller registered in Nigeria and subject to the Nigeria Data Protection Act 2023.
+        <strong className="text-white">Who we are:</strong> REHBOX LTD. ("ReHboX", "we", "us") operates the ReHboX digital physiotherapy platform at rehbox.co. We are a data controller registered in Nigeria and subject to the Nigeria Data Protection Act 2023.
       </p>
       <p className="text-white/80 text-sm leading-relaxed mb-3">
         <strong className="text-white">What this policy covers:</strong> This policy applies to all users of the ReHboX platform — physiotherapists (PTs), clients (patients), and visitors to our website. It covers all personal and health data processed through our web application, APIs, and related services.
       </p>
       <p className="text-white/60 text-sm">
-        Questions? Email <a href="mailto:privacy@rehbox.health" style={{ color: "#E0479B" }} className="hover:underline">privacy@rehbox.health</a>
+        Questions? Email <a href="mailto:privacy@rehbox.co" style={{ color: "#E0479B" }} className="hover:underline">privacy@rehbox.co</a>
       </p>
     </div>
   </LegalPageLayout>

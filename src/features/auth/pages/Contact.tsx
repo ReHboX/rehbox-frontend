@@ -10,7 +10,7 @@ const contactCards = [
   {
     icon: Mail,
     label: "Email us",
-    value: "hello@rehbox.health",
+    value: "hello@rehbox.co",
     sub: "We reply within 24 hours",
     gradient: "var(--pub-grad-accent)",
   },
@@ -40,7 +40,7 @@ const contactCards = [
 const faqs = [
   {
     q: "How do I get started as a physiotherapist?",
-    a: "Sign up at rehbox.health, complete your professional profile, and our team will vet your credentials within 2 business days. You'll then be able to onboard clients and assign personalised exercise plans.",
+    a: "Sign up at rehbox.co, complete your professional profile, and our team will vet your credentials within 2 business days. You'll then be able to onboard clients and assign personalised exercise plans.",
   },
   {
     q: "Is my health data secure?",
@@ -136,12 +136,12 @@ const Contact = () => {
           </p>
           <div className="contact-ctas flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="mailto:hello@rehbox.health"
+              href="mailto:hello@rehbox.co"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90"
               style={{ background: "var(--pub-grad-magenta)", boxShadow: "0 10px 28px rgba(224,71,155,0.4)" }}
             >
               <Mail size={16} />
-              hello@rehbox.health
+              hello@rehbox.co
             </a>
             <Link
               to="/register/client"
