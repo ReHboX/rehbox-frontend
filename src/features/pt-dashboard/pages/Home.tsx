@@ -80,11 +80,11 @@ const StatCard = ({ title, value, icon: Icon, accent, trend, i }: StatCardProps)
 // ── Main ──────────────────────────────────────────────────────────────
 const Home = () => {
   const user = useAuthStore((s) => s.user);
-
-  if (user?.vetting_status !== "approved") return <VettingPendingScreen />;
-
   const { data, isLoading } = usePTDashboard();
   const stats           = data?.stats;
+
+  const vettingStatus = data?.stats?.vetting_status ?? user?.vetting_status;
+  if (vettingStatus !== "approved") return <VettingPendingScreen />;
   const complianceChart = data?.compliance_chart ?? [];
   const recentClients   = data?.recent_clients ?? [];
 
