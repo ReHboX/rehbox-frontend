@@ -7,7 +7,7 @@ import api from '@/lib/api';
 const PLANS = [
   {
     name: 'Basic',
-    price: '₦3,500',
+    price: 'Free',
     oldPrice: '',
     period: '/month',
     features: [

@@ -160,6 +160,7 @@ const RegistrationForm = ({ type, accent }: Props) => {
                 <FieldLabel>Password</FieldLabel>
                 <TextField accent={a} icon={Lock} type="password" placeholder="Create a strong password" value={form.password}
                   onChange={(e) => update("password", e.target.value)} />
+                <p className="text-[11px] text-white/40 mt-1.5">Minimum 8 characters</p>
               </div>
               <div>
                 <FieldLabel>Confirm Password</FieldLabel>
@@ -336,6 +337,7 @@ const RegistrationForm = ({ type, accent }: Props) => {
                 <FieldLabel>Password</FieldLabel>
                 <TextField accent={a} icon={Lock} type="password" placeholder="Create a strong password" value={form.password}
                   onChange={(e) => update("password", e.target.value)} />
+                <p className="text-[11px] text-white/40 mt-1.5">Minimum 8 characters</p>
               </div>
               <div>
                 <FieldLabel>Confirm Password</FieldLabel>
@@ -380,7 +382,7 @@ const RegistrationForm = ({ type, accent }: Props) => {
           <button
             type="button"
             onClick={handleSubmit}
-            disabled={isPending || !agreedToTerms || (type === "pt" && !credentialFile)}
+            disabled={isPending || !agreedToTerms || (type === "pt" && !credentialFile) || form.password.length < 8}
             className="flex-1 text-white font-bold py-3.5 rounded-xl transition-all hover:scale-[1.01] disabled:opacity-40 disabled:hover:scale-100"
             style={{ background: a.gradient, boxShadow: a.glow }}
           >

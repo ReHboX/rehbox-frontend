@@ -119,6 +119,8 @@ export const authApi = {
   registerPT:     (data: FormData) => api.post('/auth/pt/register', data),
   registerClient: (data: object)   => api.post('/auth/client/register', data),
   logout:         ()               => api.post('/auth/logout'),
+  resetPassword:  (data: { token: string; email: string; password: string; password_confirmation: string }) =>
+    api.post('/auth/reset-password', data),
 };
 
 export const ptApi = {

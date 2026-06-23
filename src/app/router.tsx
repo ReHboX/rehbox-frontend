@@ -17,6 +17,7 @@ import Privacy from "@/features/auth/pages/Privacy";
 import Terms   from "@/features/auth/pages/Terms";
 import Upgrade from "@/features/auth/pages/Upgrade";
 import UpgradeCallback from "@/features/auth/pages/UpgradeCallback";
+import ResetPassword from "@/features/auth/pages/ResetPassword";
 
 // PT pages
 import PTHome from "@/features/pt-dashboard/pages/Home";
@@ -65,6 +66,7 @@ const AppRouter = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms"   element={<Terms />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
       </Route>
 
       {/* PT routes */}

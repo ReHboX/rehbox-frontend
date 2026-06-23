@@ -730,7 +730,7 @@ const Landing = () => {
             >
               <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-3">Basic</p>
               <div className="flex items-baseline gap-1 mb-1">
-                <span className="font-display font-bold text-4xl text-white">₦3,500</span>
+                <span className="font-display font-bold text-4xl text-white">Free</span>
                 <span className="text-white/40 text-sm">/month</span>
               </div>
               <p className="text-white/35 text-xs mb-6">General exercise library access</p>
