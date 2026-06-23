@@ -129,21 +129,26 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const user = useAuthStore((s) => s.user);
   const [language, setLanguageState] = useState<Language>('en');
 
-  // Seed from server preference on login, fall back to localStorage
+  const storageKey = user?.id ? `rehbox-language-${user.id}` : null;
+
+  // Seed from server preference on login, fall back to per-user localStorage
   useEffect(() => {
     if (user?.role === 'client' && user.language_preference) {
       const pref = user.language_preference as Language;
       setLanguageState(pref);
-      localStorage.setItem('rehbox-language', pref);
-    } else {
-      const saved = localStorage.getItem('rehbox-language') as Language;
+      if (storageKey) localStorage.setItem(storageKey, pref);
+    } else if (storageKey) {
+      const saved = localStorage.getItem(storageKey) as Language;
       if (saved) setLanguageState(saved);
+      else setLanguageState('en');
+    } else {
+      setLanguageState('en');
     }
   }, [user?.id]);
 
   const setLanguage = async (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('rehbox-language', lang);
+    if (storageKey) localStorage.setItem(storageKey, lang);
 
     // Persist to backend if logged in as client
     if (user?.role === 'client') {
