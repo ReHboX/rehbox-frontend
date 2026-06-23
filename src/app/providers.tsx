@@ -2,6 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
+import { Toaster as HotToaster } from "react-hot-toast";
 import { LanguageProvider } from '@/features/shared/context/LanguageContext';
 
 const queryClient = new QueryClient({
@@ -18,6 +19,7 @@ const Providers = ({ children }: ProvidersProps) => (
       <LanguageProvider> 
       <Toaster />
       <Sonner />
+      <HotToaster position="top-center" />
       {children}
       </LanguageProvider> 
     </TooltipProvider>
