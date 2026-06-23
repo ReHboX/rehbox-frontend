@@ -1,6 +1,6 @@
 // src/features/client-dashboard/hooks/useMotionTracking.ts
 import { useRef, useState, useCallback, useEffect } from 'react';
-import { Results } from '@mediapipe/pose';
+type Results = any;
 import {
   analyzeForm,
   computeAngleForRule,
