@@ -80,7 +80,7 @@ export function CameraTracker({
     // Set false in cleanup; all late-arriving work becomes a no-op.
     let isAlive = true;
 
-    const PoseCtor = poseDetection.Pose || (window as any).Pose;
+   const Posector = (poseDetection as any).Pose || (poseDetection as any).default || (window as any).Pose;
 
 if (!PoseCtor) {
   console.error('MediaPipe Pose constructor not found');
