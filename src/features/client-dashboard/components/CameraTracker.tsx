@@ -1,6 +1,6 @@
 // src/features/client-dashboard/components/CameraTracker.tsx
 import { useEffect, useRef, useState } from 'react';
-import * as poseDetection from '@mediapipe/pose';
+import { Pose } from '@mediapipe/pose';
 import type { Results } from '@mediapipe/pose';
 import { Camera } from '@mediapipe/camera_utils';
 import { mirrorLandmarks, POSE_PRESENCE_THRESHOLD, type JointRule } from '@/features/shared/utils/motion';
@@ -79,15 +79,9 @@ export function CameraTracker({
     // before touching the canvas, firing onResults, or calling pose.send.
     // Set false in cleanup; all late-arriving work becomes a no-op.
     let isAlive = true;
-
-   const Posector = (poseDetection as any).Pose || (poseDetection as any).default || (window as any).Pose;
-
-if (!PoseCtor) {
-  console.error('MediaPipe Pose constructor not found');
-  return;
-}
-
-const pose = new PoseCtor({
+    
+const pose = new Pose({
+  
       // Self-hosted assets — see vite.config.ts `mediapipePosePlugin`.
       // Same-origin loading avoids jsDelivr outages, clinic firewalls, and CSP
       // violations, and lets the service worker precache the wasm/model files.
