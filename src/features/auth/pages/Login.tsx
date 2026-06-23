@@ -260,9 +260,9 @@ const Login = () => {
                 transition={{ delay: 0.3 }}
                 className="text-right"
               >
-                <a href="#" className="text-xs text-pink-300 hover:text-pink-200">
+                <Link to="/forgot-password" className="text-xs text-pink-300 hover:text-pink-200">
                   Forgot password?
-                </a>
+                </Link>
               </motion.div>
 
               <motion.button
