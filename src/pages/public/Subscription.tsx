@@ -6,7 +6,7 @@ const plans = [
   {
     id: "basic",
     name: "Basic",
-    price: 3500,
+    price: 0,
     period: "month",
     icon: Zap,
     color: "border-border",
@@ -58,7 +58,7 @@ const Subscription = () => {
               </div>
               <h3 className="font-display font-bold text-xl mb-1">{plan.name}</h3>
               <div className="flex items-baseline gap-1 mb-5">
-                <span className="font-display font-bold text-3xl">₦{plan.price.toLocaleString()}</span>
+                <span className="font-display font-bold text-3xl">{plan.price === 0 ? 'Free' : `₦${plan.price.toLocaleString()}`}</span>
                 <span className="text-muted-foreground text-sm">/{plan.period}</span>
               </div>
               <ul className="space-y-2 mb-6">

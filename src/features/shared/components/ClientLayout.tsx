@@ -123,6 +123,7 @@ const ClientLayout = () => {
                 user.name.charAt(0).toUpperCase()
               )}
             </div>
+            <button onClick={handleLogout} className="ml-2 p-2 rounded-lg hover:bg-muted"><LogOut size={16} /></button>
           </div>
         </header>
         <main className="flex-1 overflow-y-auto p-4 md:p-6"><Outlet /></main>

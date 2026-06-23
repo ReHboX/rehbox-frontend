@@ -380,7 +380,7 @@ const RegistrationForm = ({ type, accent }: Props) => {
           <button
             type="button"
             onClick={handleSubmit}
-            disabled={isPending || !agreedToTerms || (type === "pt" && !credentialFile)}
+            disabled={isPending || !agreedToTerms || (type === "pt" && !credentialFile) || form.password.length < 8}
             className="flex-1 text-white font-bold py-3.5 rounded-xl transition-all hover:scale-[1.01] disabled:opacity-40 disabled:hover:scale-100"
             style={{ background: a.gradient, boxShadow: a.glow }}
           >
