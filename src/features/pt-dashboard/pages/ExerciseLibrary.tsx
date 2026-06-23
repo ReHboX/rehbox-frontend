@@ -10,6 +10,7 @@ const PAGE_SIZE = 12;
 
 const AREAS = [
   { value: '', label: 'All Areas' },
+  { value: 'general', label: 'General' },
   { value: 'head_neck', label: 'Head & Neck' },
   { value: 'upper_limbs', label: 'Upper Limbs' },
   { value: 'elbow_forearm_wrist', label: 'Elbow / Forearm / Wrist' },
