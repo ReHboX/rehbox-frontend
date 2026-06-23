@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 type Results = any;
 declare const Pose: any;
-import { Camera } from '@mediapipe/camera_utils';
+declare const Camera: any;
 import { mirrorLandmarks, POSE_PRESENCE_THRESHOLD, type JointRule } from '@/features/shared/utils/motion';
 import {
   drawGhostSkeleton,
