@@ -25,15 +25,25 @@ function getEcho(): InstanceType<typeof Echo> {
   if (!echoInstance) {
     const key = import.meta.env.VITE_REVERB_APP_KEY;
 
-    if (!key) {
-      console.warn('VITE_REVERB_APP_KEY is not set — WebSocket disabled');
-      return {
-        join:         () => ({ here: () => ({}), joining: () => ({}), leaving: () => ({}) }),
-        channel:      () => ({ listen: () => ({}) }),
-        leaveChannel: () => {},
-        leave:        () => {},
-      } as any;
-    }
+   if (!key) {
+  console.warn('VITE_REVERB_APP_KEY is not set — WebSocket disabled');
+
+  const noopChannel: any = {};
+
+  noopChannel.here = () => noopChannel;
+  noopChannel.joining = () => noopChannel;
+  noopChannel.leaving = () => noopChannel;
+  noopChannel.listen = () => noopChannel;
+  noopChannel.error = () => noopChannel;
+
+  return {
+    join: () => noopChannel,
+    channel: () => noopChannel,
+    private: () => noopChannel,
+    leaveChannel: () => {},
+    leave: () => {},
+  } as any;
+}
 
     // ✅ Read from sessionStorage — matches the store switch
     const stored = sessionStorage.getItem('rehbox-auth');
