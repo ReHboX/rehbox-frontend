@@ -1,6 +1,6 @@
 // src/features/client-dashboard/components/CameraTracker.tsx
 import { useEffect, useRef, useState } from 'react';
-import type { Results } from '@mediapipe/pose';
+type Results = any;
 declare const Pose: any;
 import { Camera } from '@mediapipe/camera_utils';
 import { mirrorLandmarks, POSE_PRESENCE_THRESHOLD, type JointRule } from '@/features/shared/utils/motion';
