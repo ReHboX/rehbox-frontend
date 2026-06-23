@@ -344,7 +344,7 @@ const Profile = () => {
             {ptData?.activation_code ?? '—'}
           </p>
           <p className="text-xs text-muted-foreground mt-1">
-            Share this with your clients to connect · {ptData?.client_count ?? 0}/5 slots used
+            Share this with your clients to connect · {ptData?.client_count ?? 0} clients connected
           </p>
         </div>
       </div>
