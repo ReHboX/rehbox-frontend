@@ -1,6 +1,7 @@
 // src/features/client-dashboard/components/CameraTracker.tsx
 import { useEffect, useRef, useState } from 'react';
-import { Pose, Results } from '@mediapipe/pose';
+import * as poseDetection from '@mediapipe/pose';
+import type { Results } from '@mediapipe/pose';
 import { Camera } from '@mediapipe/camera_utils';
 import { mirrorLandmarks, POSE_PRESENCE_THRESHOLD, type JointRule } from '@/features/shared/utils/motion';
 import {
@@ -79,7 +80,7 @@ export function CameraTracker({
     // Set false in cleanup; all late-arriving work becomes a no-op.
     let isAlive = true;
 
-    const pose = new Pose({
+    const pose = new poseDetection.Pose({
       // Self-hosted assets — see vite.config.ts `mediapipePosePlugin`.
       // Same-origin loading avoids jsDelivr outages, clinic firewalls, and CSP
       // violations, and lets the service worker precache the wasm/model files.
