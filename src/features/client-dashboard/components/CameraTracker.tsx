@@ -51,7 +51,7 @@ export function CameraTracker({
   const videoRef  = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const cameraRef = useRef<Camera | null>(null);
-  const poseRef   = useRef<Pose | null>(null);
+  const poseRef   = useRef<any | null>(null);
   const rulesRef        = useRef<JointRule[] | undefined>(jointRules);
   const directionRef    = useRef<MovementDirection>(movementDirection);
   const angleRef        = useRef<number | null | undefined>(currentAngle);
@@ -85,11 +85,7 @@ const pose = new Pose({
     `https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.5.1675469404/${file}`,
 });
   
-      // Self-hosted assets — see vite.config.ts `mediapipePosePlugin`.
-      // Same-origin loading avoids jsDelivr outages, clinic firewalls, and CSP
-      // violations, and lets the service worker precache the wasm/model files.
-      locateFile: (file) => `/mediapipe/${file}`,
-    });
+     
 
     pose.setOptions({
       modelComplexity:          1,
