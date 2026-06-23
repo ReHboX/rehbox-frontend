@@ -1,7 +1,8 @@
 // src/features/client-dashboard/components/CameraTracker.tsx
 import { useEffect, useRef, useState } from 'react';
-import { Pose } from '@mediapipe/pose';
 import type { Results } from '@mediapipe/pose';
+
+declare const Pose: any;
 import { Camera } from '@mediapipe/camera_utils';
 import { mirrorLandmarks, POSE_PRESENCE_THRESHOLD, type JointRule } from '@/features/shared/utils/motion';
 import {
@@ -81,6 +82,9 @@ export function CameraTracker({
     let isAlive = true;
     
 const pose = new Pose({
+  locateFile: (file: string) =>
+    `https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.5.1675469404/${file}`,
+});
   
       // Self-hosted assets — see vite.config.ts `mediapipePosePlugin`.
       // Same-origin loading avoids jsDelivr outages, clinic firewalls, and CSP
