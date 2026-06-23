@@ -146,6 +146,10 @@ const EarningsSection = () => {
           ))}
         </div>
       )}
+
+      <p className="text-xs text-muted-foreground border border-border rounded-xl px-4 py-3 leading-relaxed">
+        💡 Withdrawal functionality is coming in a future update. Your earnings are being tracked and will be available for withdrawal once the feature launches.
+      </p>
     </div>
   );
 };

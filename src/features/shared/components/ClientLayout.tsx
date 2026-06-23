@@ -2,7 +2,7 @@ import { Outlet, NavLink, useNavigate, Navigate } from "react-router-dom";
 import { useState } from "react";
 import {
   LayoutDashboard, ClipboardList, Dumbbell, TrendingUp, Gift, ShoppingBag,
-  MessageCircle, User, LogOut, Menu, ChevronLeft, Bell as BellIcon, Clock
+  MessageCircle, User, LogOut, Menu, ChevronLeft, Bell as BellIcon, Clock, Mail
 } from "lucide-react";
 import { useAuthStore } from "@/store/authStore";
 import { useUIStore } from "@/store/uiStore";
@@ -86,6 +86,9 @@ const ClientLayout = () => {
       </nav>
       <div className="px-3 py-4 border-t border-sidebar-border">
         {sidebarOpen && <div className="coin-badge mb-3 w-full justify-center"><span>🪙</span><span>{(user.coin_balance || 0).toLocaleString()} coins</span></div>}
+        <a href="/contact" target="_blank" rel="noreferrer" className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-sm text-sidebar-foreground hover:bg-sidebar-accent hover:text-white transition-colors mb-1">
+          <Mail size={18} />{sidebarOpen && <span>Contact Support</span>}
+        </a>
         <button onClick={handleLogout} className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-sm text-sidebar-foreground hover:bg-destructive/20 hover:text-destructive transition-colors">
           <LogOut size={18} />{sidebarOpen && <span>Logout</span>}
         </button>

@@ -160,6 +160,7 @@ const RegistrationForm = ({ type, accent }: Props) => {
                 <FieldLabel>Password</FieldLabel>
                 <TextField accent={a} icon={Lock} type="password" placeholder="Create a strong password" value={form.password}
                   onChange={(e) => update("password", e.target.value)} />
+                <p className="text-[11px] text-white/40 mt-1.5">Minimum 8 characters</p>
               </div>
               <div>
                 <FieldLabel>Confirm Password</FieldLabel>
@@ -336,6 +337,7 @@ const RegistrationForm = ({ type, accent }: Props) => {
                 <FieldLabel>Password</FieldLabel>
                 <TextField accent={a} icon={Lock} type="password" placeholder="Create a strong password" value={form.password}
                   onChange={(e) => update("password", e.target.value)} />
+                <p className="text-[11px] text-white/40 mt-1.5">Minimum 8 characters</p>
               </div>
               <div>
                 <FieldLabel>Confirm Password</FieldLabel>
