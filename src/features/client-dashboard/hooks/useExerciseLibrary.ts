@@ -16,7 +16,9 @@ export function useExerciseLibrary(filters: LibraryFilters = {}) {
   return useQuery({
     queryKey: ['client-exercise-library', filters],
     queryFn: async () => {
-      const res = await api.get<{ data: Exercise[] }>('/client/exercises', { params: filters });
+      const res = await api.get<{ data: Exercise[] }>('/client/exercises', {
+  params: { ...filters, area: filters.area ?? 'general' },
+});
       return res.data.data;
     },
     enabled: isClient,
