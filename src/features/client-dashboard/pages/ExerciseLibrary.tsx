@@ -17,7 +17,9 @@ const AREAS: { value: ExerciseArea; label: string }[] = [
 ];
 
 export default function ExerciseLibrary() {
-  const [filters, setFilters] = useState<LibraryFilters>({});
+  const [filters, setFilters] = useState<LibraryFilters>({
+  area: 'general',
+});
   const [search, setSearch] = useState('');
   const { data: exercises = [], isLoading } = useExerciseLibrary(filters);
 
