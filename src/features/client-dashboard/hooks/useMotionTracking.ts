@@ -340,7 +340,13 @@ export function useMotionTracking(
         const use3D_r = !!(rule.movement && ROM_STANDARDS[rule.movement]?.use_3d);
         const rawAngle = computeAngleForRule(lm, triplet, rule.side ?? 'bilateral', wlm, use3D_r);
         const angle = rawAngle !== null ? clampToPhysiological(rawAngle, rule.movement) : null;
-        if (angle !== null) angles[rule.joint] = Math.round(angle);
+        if (angle !== null) {
+  angles[rule.joint] = Math.round(angle);
+
+  if (rule.rep_joint) {
+    setCurrentAngle(Math.round(angle));
+  }
+}
       }
       setCurrentAngles(angles);
 
