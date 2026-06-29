@@ -16,7 +16,7 @@ const plans = [
   {
     id: "standard",
     name: "Standard",
-    price: 2000,
+    price: 5000,
     period: "month",
     icon: Crown,
     color: "border-primary shadow-primary",
