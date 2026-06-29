@@ -787,7 +787,7 @@ const Landing = () => {
                 className="block text-center py-3 rounded-xl text-sm font-bold text-white transition-all hover:opacity-90 hover:scale-[1.02]"
                 style={{ background: "linear-gradient(135deg,#E5197D,#C4006A)", boxShadow: "0 8px 28px rgba(229,25,125,0.35)" }}
               >
-                Get Started — ₦2,000/mo
+                Get Started — ₦5,000/mo
               </Link>
             </motion.div>
           </div>
