@@ -158,7 +158,7 @@ export default function Upgrade() {
             </div>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full mb-6"
               style={{ background: 'rgba(229,25,125,0.12)', border: '1px solid rgba(229,25,125,0.25)' }}>
-              <span className="text-pink-300 text-xs font-semibold">Save 73% — launch offer</span>
+              <span className="text-pink-300 text-xs font-semibold">Save 33% — launch offer</span>
             </div>
 
             <ul className="space-y-3 mb-8">
