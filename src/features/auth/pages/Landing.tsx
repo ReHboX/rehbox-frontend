@@ -78,7 +78,7 @@ const pricingPlans = [
     features: ["Access to general exercises", "Basic progress tracking", "Coin rewards system"],
   },
   {
-    name: "Standard", price: 2_000, oldPrice: 7_500, icon: Crown, popular: true, isEnterprise: false,
+    name: "Standard", price: 5_000, oldPrice: 7_500, icon: Crown, popular: true, isEnterprise: false,
     features: ["Personalised PT exercise plan", "Chat with your PT (text + files)", "MediaPipe motion tracking", "Coin rewards & shop", "Progress analytics"],
   },
   {
