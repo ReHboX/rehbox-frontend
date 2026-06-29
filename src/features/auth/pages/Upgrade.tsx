@@ -148,7 +148,7 @@ export default function Upgrade() {
             <p className="font-display font-bold uppercase tracking-widest text-sm mb-2" style={{ color: '#FF6BB5' }}>Standard</p>
             <div className="mb-3">
               <div className="flex items-baseline gap-2">
-                <span className="font-display font-bold text-5xl text-white">₦2,000</span>
+                <span className="font-display font-bold text-5xl text-white">₦5,000</span>
                 <span className="text-white/45 text-sm">/month</span>
               </div>
               <div className="flex items-center gap-2 mt-1.5">

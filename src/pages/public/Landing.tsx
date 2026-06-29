@@ -763,7 +763,7 @@ const Landing = () => {
               </div>
               <p className="font-semibold text-xs uppercase tracking-widest mb-3" style={{ color: "#FF6BB5" }}>Standard</p>
               <div className="flex items-baseline gap-1 mb-1">
-                <span className="font-display font-bold text-4xl text-white">₦2,000</span>
+                <span className="font-display font-bold text-4xl text-white">₦5,000</span>
                 <span className="text-white/40 text-sm">/month</span>
               </div>
               <p className="text-white/35 text-xs mb-6">Full AI-powered recovery experience</p>

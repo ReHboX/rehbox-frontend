@@ -77,7 +77,7 @@ const PLAN_LABELS: Record<string, string> = {
 
 const PLAN_PRICES: Record<string, string> = {
   basic: "₦5,000/month",
-  standard: "₦2,000/month",
+  standard: "₦5,000/month",
   premium: "₦20,000/month",
 };
 
