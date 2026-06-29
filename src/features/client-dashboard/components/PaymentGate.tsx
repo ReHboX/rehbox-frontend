@@ -24,7 +24,7 @@ const PLANS = [
   },
   {
     name: 'Standard',
-    price: '₦2,000',
+    price: '₦5,000',
     oldPrice: '₦7,500',
     period: '/month',
     features: [
